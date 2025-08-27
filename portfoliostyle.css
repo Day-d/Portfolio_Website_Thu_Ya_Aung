@@ -1,0 +1,27 @@
+ /* Custom font for the content paragraph */
+    @import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
+body {
+      font-family: 'Courier Prime', monospace;
+    }
+.yellow-border {
+      border: 2px solid #fcd34d; /* Tailwind yellow-400 */
+    }
+    /* Custom underline style for buttons */
+    .btn-underline {
+      position: relative;
+      padding-bottom: 0.15rem;
+    }
+    .btn-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #7f1d1d; /* Tailwind red-900 */
+      transition: width 0.3s ease;
+    }
+    .btn-underline:hover::after {
+      width: 0;
+    }
+    
